@@ -1,4 +1,6 @@
-/*** Task 2 - Sample and description statistics ***/
+/*** SAS Code: Estimation for for yield of corporate bond ***/
+
+/*** Sample and description statistics ***/
 /** import data **/
 PROC IMPORT OUT=work.assignment_sample_a 
 		DATAFILE="/home/u63511963/BUSANA7001/Assignment/Sample_a.csv" DBMS=CSV 
@@ -194,7 +196,9 @@ DATA work.assignment_task2;
 			c_d=1;
 RUN;
 
-/** DATA preparation for task 3 **/
+
+/** DATA preparation for regression analysis **/
+
 /* Create dummy variable for market_of_issue */
 DATA work.assignment_task2;
 	SET work.assignment_task2;
@@ -484,8 +488,9 @@ PROC SGPLOT DATA=work.assignment_task2;
 RUN;
 
 
-/*** Task 3 - Estimating yield for a hypothetical bond ***/
-/* This step is not necessary, just personally perfer to have a seperate DATASET for assignment task3 */
+/*** Regression Analysis: Estimating yield for a hypothetical bond ***/
+
+/* This step is not necessary, just personally perfer to have a seperate DATASET to perform the regression analysis */
 DATA work.assignment_task3;
 	SET work.assignment_task2;
 RUN;
