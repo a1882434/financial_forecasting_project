@@ -1,3 +1,5 @@
+/**** Credit By Paulina Suen ****/
+
 /*** SAS Code: Estimation for for yield of corporate bond ***/
 
 /*** Sample and description statistics ***/
